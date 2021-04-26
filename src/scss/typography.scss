@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('../assets/fonts/comfortaa/Comfortaa-Regular.ttf');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('../assets/fonts/comfortaa/Comfortaa-Bold.ttf');
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/roboto/Roboto-Regular.ttf');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+h1,
+h2,
+q,
+input,
+label,
+button,
+a {
+  font-family: 'Comfortaa', 'Open Sans', sans-serif;
+}
+
+h3,
+p,
+span,
+body {
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+}

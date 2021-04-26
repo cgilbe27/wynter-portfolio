@@ -1,0 +1,340 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~@angular/material/_theming';
+
+// Include non-theme styles for core.
+@include mat-core();
+
+$md-cotton-candy: (
+  50: #fff8fc,
+  100: #ffedf9,
+  200: #ffe1f5,
+  300: #ffd4f0,
+  400: #ffcbed,
+  500: #ffc2ea,
+  600: #ffbce7,
+  700: #ffb4e4,
+  800: #fface1,
+  900: #ff9fdb,
+  A100: #ffffff,
+  A200: #ffffff,
+  A400: #ffffff,
+  A700: #ffffff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$md-key-lime: (
+  50: #fdfeef,
+  100: #fafcd8,
+  200: #f6fbbe,
+  300: #f2f9a4,
+  400: #f0f791,
+  500: #edf67d,
+  600: #ebf575,
+  700: #e8f36a,
+  800: #e5f260,
+  900: #e0ef4d,
+  A100: #ffffff,
+  A200: #ffffff,
+  A400: #fcffe4,
+  A700: #faffca,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$md-aero: (
+  50: #f0f6fb,
+  100: #d8e8f5,
+  200: #bfd9ee,
+  300: #a5c9e7,
+  400: #91bee2,
+  500: #7eb2dd,
+  600: #76abd9,
+  700: #6ba2d4,
+  800: #6199cf,
+  900: #4e8ac7,
+  A100: #ffffff,
+  A200: #f1f7ff,
+  A400: #beddff,
+  A700: #a4d0ff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$md-cultured: (
+  50: #fefefe,
+  100: #fcfcfc,
+  200: #fafafa,
+  300: #f8f8f8,
+  400: #f7f7f7,
+  500: #f5f5f5,
+  600: #f4f4f4,
+  700: #f2f2f2,
+  800: #f0f0f0,
+  900: #eeeeee,
+  A100: #ffffff,
+  A200: #ffffff,
+  A400: #ffffff,
+  A700: #ffffff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$md-black-ink: (
+  50: #e0e0e0,
+  100: #b3b3b3,
+  200: #808080,
+  300: #4d4d4d,
+  400: #262626,
+  500: #000000,
+  600: #000000,
+  700: #000000,
+  800: #000000,
+  900: #000000,
+  A100: #a6a6a6,
+  A200: #8c8c8c,
+  A400: #737373,
+  A700: #666666,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #ffffff,
+    A700: #ffffff,
+  ),
+);
+
+$md-fuschia: (
+  50: #ffe0f5,
+  100: #ffb3e5,
+  200: #ff80d4,
+  300: #ff4dc2,
+  400: #ff26b5,
+  500: #ff00a8,
+  600: #ff00a0,
+  700: #ff0097,
+  800: #ff008d,
+  900: #ff007d,
+  A100: #ffffff,
+  A200: #fff2f8,
+  A400: #ffbfdb,
+  A700: #ffa6cc,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$md-deep-saffron: (
+  50: #fff2e6,
+  100: #ffe0c2,
+  200: #ffcb99,
+  300: #ffb670,
+  400: #ffa651,
+  500: #ff9632,
+  600: #ff8e2d,
+  700: #ff8326,
+  800: #ff791f,
+  900: #ff6813,
+  A100: #ffffff,
+  A200: #fffcfa,
+  A400: #ffd9c7,
+  A700: #ffc8ad,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$sr-cotton-candy: mat-palette($md-cotton-candy);
+$sr-key-lime: mat-palette($md-key-lime);
+$sr-aero: mat-palette($md-aero);
+$sr-cultured: mat-palette($md-cultured);
+$sr-black-ink: mat-palette($md-black-ink);
+$sr-fuschia: mat-palette($md-fuschia);
+$sr-deep-saffron: mat-palette($md-deep-saffron);
+
+$sr-theme: mat-light-theme($sr-fuschia, $sr-cotton-candy, $sr-deep-saffron);
+
+// Include all theme styles for the components.
+@include angular-material-theme($sr-theme);
+
+h1 {
+  color: mat-color($sr-black-ink);
+  font-family: 'Comfortaa', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 45px;
+  letter-spacing: 0.03em;
+}
+
+h2 {
+  color: mat-color($sr-black-ink);
+  font-family: 'Comfortaa', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+}
+
+h3 {
+  color: mat-color($sr-black-ink);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+}
+
+p {
+  color: mat-color($sr-black-ink);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+}
+
+q {
+  color: mat-color($sr-black-ink);
+  font-family: 'Comfortaa', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+}
+
+span {
+  color: mat-color($sr-black-ink);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+a {
+  color: mat-color($sr-black-ink);
+  font-family: 'Comfortaa', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+a:hover,
+a:active {
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 3px 0 0 mat-color($sr-fuschia);
+}
+
+.active {
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 3px 0 0 mat-color($sr-fuschia);
+}
+
+.normal {
+  font-weight: normal;
+}
+
+// input, button {
+
+// }
