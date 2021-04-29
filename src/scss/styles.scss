@@ -10,7 +10,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -19,8 +18,16 @@ h6 {
   margin: 8px 0;
 }
 
+h1 {
+  margin: 10px 0;
+}
+
 p {
   margin: 0;
+}
+
+.cp {
+  cursor: pointer;
 }
 
 .fixed {
@@ -29,12 +36,20 @@ p {
   left: 0px;
 }
 
-.w100 {
-  width: 100%;
+.h398 {
+  height: 398px;
 }
 
-.p20 {
-  padding: 20px;
+.mbot10 {
+  margin-bottom: 10px;
+}
+
+.mbot50 {
+  margin-bottom: 50px;
+}
+
+.mbot125 {
+  margin-bottom: 125px;
 }
 
 .mlr10 {
@@ -42,10 +57,56 @@ p {
   margin-right: 10px;
 }
 
-html,
-body {
-  height: 100%;
+.mr25 {
+  margin-right: 25px;
 }
+
+.mtop160 {
+  margin-top: 160px;
+}
+
+.mw600 {
+  max-width: 600px;
+}
+
+.p20 {
+  padding: 20px;
+}
+
+.plr150 {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.pr {
+  position: relative;
+}
+
+.tac {
+  text-align: center;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.w163 {
+  width: 163px;
+}
+
+.w200 {
+  width: 200px;
+}
+
+.z1 {
+  z-index: 1;
+}
+
+.z2 {
+  z-index: 2;
+}
+
 body {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1064px;
 }

@@ -1,20 +1,31 @@
-<div class="w100 p20 fixed" fxLayout="row" fxLayoutAlign="end center">
-  <a class="mlr10" [class.active]="url === '/'" [class.normal]="url !== '/'"
+<div
+  class="w100 p20 fixed cultured-bc z2"
+  fxLayout="row"
+  fxLayoutAlign="end center"
+>
+  <a
+    class="mlr10"
+    href="/"
+    [class.active]="url === '/'"
+    [class.normal]="url !== '/'"
     >Projects</a
   >
   <a
     class="mlr10"
+    href="/about"
     [class.active]="url === '/about'"
     [class.normal]="url !== '/about'"
     >About Me</a
   >
   <a
     class="mlr10"
+    href="/resume"
     [class.active]="url === '/resume'"
     [class.normal]="url !== '/resume'"
     >Resume</a
   >
   <a
+    href="/contact"
     class="mlr10"
     [class.active]="url === '/contact'"
     [class.normal]="url !== '/contact'"

@@ -248,6 +248,11 @@ $sr-theme: mat-light-theme($sr-fuschia, $sr-cotton-candy, $sr-deep-saffron);
 // Include all theme styles for the components.
 @include angular-material-theme($sr-theme);
 
+body,
+html {
+  background-color: mat-color($sr-cultured);
+}
+
 h1 {
   color: mat-color($sr-black-ink);
   font-family: 'Comfortaa', sans-serif;
@@ -325,16 +330,91 @@ a:active {
   box-shadow: 0 3px 0 0 mat-color($sr-fuschia);
 }
 
+a[href] {
+  text-decoration: none;
+}
+
+input {
+  border: 1px solid mat-color($sr-black-ink);
+  height: 36px;
+}
+
 .active {
   font-weight: bold;
   text-decoration: none;
   box-shadow: 0 3px 0 0 mat-color($sr-fuschia);
 }
 
+.aero-bc {
+  background-color: mat-color($sr-aero);
+}
+
 .normal {
   font-weight: normal;
 }
 
-// input, button {
+.cotton-candy-bc {
+  background-color: mat-color($sr-cotton-candy);
+}
 
-// }
+.cultured-bc {
+  background-color: mat-color($sr-cultured);
+}
+
+.fuschia-c {
+  color: mat-color($sr-fuschia);
+  font-weight: bold;
+}
+
+.key-lime-bc {
+  background-color: mat-color($sr-key-lime);
+}
+
+.strike-through {
+  text-decoration: line-through;
+}
+
+.input {
+  padding: 12px 25px;
+  color: mat-color($sr-black-ink);
+  font-family: 'Comfortaa', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid #000000;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.input2 {
+  padding: 12px 25px;
+  color: mat-color($sr-black-ink);
+  font-family: 'Comfortaa', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  border: 2px solid #000000;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.overlay {
+  width: 141px;
+  height: 45px;
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  background-color: mat-color($sr-cotton-candy);
+  z-index: -1;
+}
+
+.overlay:hover {
+  background-color: mat-color($sr-fuschia, 200);
+}
+
+.trigger:hover .overlay {
+  background-color: mat-color($sr-fuschia, 200);
+}

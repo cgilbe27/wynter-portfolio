@@ -4,10 +4,10 @@ import { Router } from '@angular/router';
 import { Subject } from 'rxjs';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
+  selector: 'app-about',
+  templateUrl: './about.component.html',
 })
-export class HomeComponent implements OnDestroy, OnInit {
+export class AboutComponent implements OnDestroy, OnInit {
   public componentDestroyed: Subject<boolean> = new Subject();
 
   constructor(
@@ -17,10 +17,10 @@ export class HomeComponent implements OnDestroy, OnInit {
   ) {}
 
   public ngOnInit(): void {
-    this.titleService.setTitle('Wynter Gilbert - Home');
+    this.titleService.setTitle('Wynter Gilbert - About');
     this.metaTagService.updateTag({
       name: 'description',
-      content: 'Wynter Gilbert - Home',
+      content: 'Wynter Gilbert - About',
     });
   }
 
