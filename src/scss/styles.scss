@@ -10,6 +10,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
 h2,
 h3,
 h4,
@@ -40,6 +45,10 @@ p {
   height: 398px;
 }
 
+.m0a {
+  margin: 0 auto;
+}
+
 .mbot10 {
   margin-bottom: 10px;
 }
@@ -61,6 +70,10 @@ p {
   margin-right: 25px;
 }
 
+.mr150 {
+  margin-right: 150px;
+}
+
 .mtop160 {
   margin-top: 160px;
 }
@@ -69,8 +82,30 @@ p {
   max-width: 600px;
 }
 
+.mw900 {
+  max-width: 900px;
+}
+
+.mw1000 {
+  max-width: 1000px;
+}
+
+.mw1440 {
+  max-width: 1440px;
+}
+
 .p20 {
   padding: 20px;
+}
+
+.ptb50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.plr10 {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .plr150 {
@@ -84,6 +119,10 @@ p {
 
 .tac {
   text-align: center;
+}
+
+.w50 {
+  width: 50%;
 }
 
 .w100 {
@@ -104,9 +143,4 @@ p {
 
 .z2 {
   z-index: 2;
-}
-
-body {
-  margin: 0 auto;
-  max-width: 1064px;
 }

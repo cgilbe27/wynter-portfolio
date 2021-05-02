@@ -21,6 +21,22 @@ const appRoutes: Routes = [
       ),
     pathMatch: 'full',
   },
+  {
+    path: 'projects',
+    loadChildren: () =>
+      import('./components/projects/projects.module').then(
+        (m) => m.ProjectsModule
+      ),
+    pathMatch: 'full',
+  },
+  {
+    path: 'projects/kaus',
+    loadChildren: () =>
+      import('./components/projects/kaus/kaus.module').then(
+        (m) => m.KausModule
+      ),
+    pathMatch: 'full',
+  },
 
   // Otherwise redirect back to Home
   { path: '**', redirectTo: '' },
