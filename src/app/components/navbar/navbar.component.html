@@ -1,34 +1,42 @@
 <div
   class="w100 p20 fixed cultured-bc z2"
   fxLayout="row"
-  fxLayoutAlign="end center"
+  fxLayoutAlign="space-between center"
 >
-  <a
-    class="mlr10 underline"
-    href="/"
-    [class.active]="url === '/'"
-    [class.normal]="url !== '/'"
-    >Projects</a
-  >
-  <a
-    class="mlr10 underline"
-    href="/about"
-    [class.active]="url === '/about'"
-    [class.normal]="url !== '/about'"
-    >About Me</a
-  >
-  <a
-    class="mlr10 underline"
-    href="/resume"
-    [class.active]="url === '/resume'"
-    [class.normal]="url !== '/resume'"
-    >Resume</a
-  >
-  <a
-    class="mlr10 underline"
-    href="/contact"
-    [class.active]="url === '/contact'"
-    [class.normal]="url !== '/contact'"
-    >Contact</a
-  >
+  <img
+    class="cp w40"
+    (click)="gotoUrl('/')"
+    src="/assets/images/logos/Vector.svg"
+  />
+  <div fxLayout="row" fxLayoutAlign="end center">
+    <a
+      class="mlr10 underline"
+      (click)="gotoUrl('/')"
+      [class.active]="url === '/' || url.includes('/projects')"
+      [class.normal]="url !== '/' && !url.includes('/projects')"
+      >Projects</a
+    >
+    <a
+      class="mlr10 underline"
+      (click)="gotoUrl('/about')"
+      [class.active]="url === '/about'"
+      [class.normal]="url !== '/about'"
+      >About Me</a
+    >
+    <a
+      class="mlr10 underline"
+      target="_blank"
+      href="/assets/files/Resume.pdf"
+      [class.active]="url === '/resume'"
+      [class.normal]="url !== '/resume'"
+      >Resume</a
+    >
+    <a
+      class="mlr10 underline"
+      (click)="gotoUrl('/contact')"
+      [class.active]="url === '/contact'"
+      [class.normal]="url !== '/contact'"
+      >Contact</a
+    >
+  </div>
 </div>

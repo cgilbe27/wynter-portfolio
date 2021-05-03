@@ -12,7 +12,6 @@
 
 body {
   margin: 0 auto;
-  max-width: 1440px;
 }
 
 h2,
@@ -31,6 +30,10 @@ p {
   margin: 0;
 }
 
+.b {
+  font-weight: bold !important;
+}
+
 .cp {
   cursor: pointer;
 }
@@ -41,8 +44,16 @@ p {
   left: 0px;
 }
 
+.fs14 {
+  font-size: 14px !important;
+}
+
 .h398 {
   height: 398px;
+}
+
+.kaus-blue-b3 {
+  border: 3px solid #5574f9;
 }
 
 .m0a {
@@ -74,8 +85,16 @@ p {
   margin-right: 150px;
 }
 
+.mtop8 {
+  margin-top: 8px;
+}
+
 .mtop160 {
   margin-top: 160px;
+}
+
+.mw400 {
+  max-width: 400px;
 }
 
 .mw600 {
@@ -94,8 +113,16 @@ p {
   max-width: 1440px;
 }
 
+.ofc {
+  object-fit: contain;
+}
+
 .p20 {
   padding: 20px;
+}
+
+.p50 {
+  padding: 50px;
 }
 
 .ptb50 {
@@ -121,8 +148,24 @@ p {
   text-align: center;
 }
 
+.vam {
+  vertical-align: middle;
+}
+
+.w29 {
+  width: 29%;
+}
+
+.w40 {
+  width: 40px;
+}
+
 .w50 {
   width: 50%;
+}
+
+.w66 {
+  width: 66%;
 }
 
 .w100 {

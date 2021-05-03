@@ -294,14 +294,20 @@ p,
   letter-spacing: 0.03em;
 }
 
-q {
+q,
+.pc {
   color: mat-color($sr-black-ink);
   font-family: 'Comfortaa', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.03em;
+
+  &::before,
+  ::after {
+    content: '';
+  }
 }
 
 span {

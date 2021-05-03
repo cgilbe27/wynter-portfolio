@@ -53,4 +53,8 @@ export class NavbarComponent implements OnInit, OnDestroy {
     this.componentDestroyed.next(true);
     this.componentDestroyed.complete();
   }
+
+  public gotoUrl(s: string) {
+    this.router.navigateByUrl(s);
+  }
 }
