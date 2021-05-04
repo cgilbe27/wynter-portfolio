@@ -44,4 +44,5 @@ const appRoutes: Routes = [
 
 export const RoutingModule = RouterModule.forRoot(appRoutes, {
   preloadingStrategy: PreloadAllModules,
+  scrollPositionRestoration: 'enabled',
 });

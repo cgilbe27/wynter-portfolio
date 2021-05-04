@@ -34,6 +34,20 @@ p {
   font-weight: bold !important;
 }
 
+.backtotop {
+  opacity: 0.75;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+}
+
 .cp {
   cursor: pointer;
 }
@@ -72,6 +86,10 @@ p {
   margin-bottom: 125px;
 }
 
+.mbot175 {
+  margin-bottom: 175px;
+}
+
 .mlr10 {
   margin-left: 10px;
   margin-right: 10px;
@@ -79,6 +97,10 @@ p {
 
 .mr25 {
   margin-right: 25px;
+}
+
+.mr50 {
+  margin-right: 50px;
 }
 
 .mr150 {
@@ -130,9 +152,9 @@ p {
   padding-bottom: 50px;
 }
 
-.plr10 {
-  padding-left: 10px;
-  padding-right: 10px;
+.plr151 {
+  padding-left: 151px;
+  padding-right: 151px;
 }
 
 .plr150 {
@@ -152,12 +174,20 @@ p {
   vertical-align: middle;
 }
 
+.w15 {
+  width: 15%;
+}
+
 .w29 {
   width: 29%;
 }
 
 .w40 {
   width: 40px;
+}
+
+.w45 {
+  width: 45%;
 }
 
 .w50 {
