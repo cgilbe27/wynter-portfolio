@@ -15,8 +15,9 @@ import { takeUntil } from 'rxjs/operators';
 })
 export class NavbarComponent implements OnInit, OnDestroy {
   public componentDestroyed: Subject<boolean> = new Subject();
-  public url = '';
   public loading = false;
+  public menuIsEnabled = false;
+  public url = '';
 
   constructor(private router: Router) {}
 
@@ -49,12 +50,17 @@ export class NavbarComponent implements OnInit, OnDestroy {
       });
   }
 
-  public ngOnDestroy(): void {
+  public ngOnDestroy() {
     this.componentDestroyed.next(true);
     this.componentDestroyed.complete();
   }
 
   public gotoUrl(s: string) {
     this.router.navigateByUrl(s);
+    this.menuIsEnabled = false;
+  }
+
+  public toggleMenu() {
+    this.menuIsEnabled = !this.menuIsEnabled;
   }
 }

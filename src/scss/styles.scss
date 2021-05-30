@@ -62,6 +62,10 @@ p {
   font-size: 14px !important;
 }
 
+.fwb {
+  font-weight: bold;
+}
+
 .h398 {
   height: 398px;
 }
@@ -78,6 +82,10 @@ p {
   margin-bottom: 10px;
 }
 
+.mbot25 {
+  margin-bottom: 25px;
+}
+
 .mbot50 {
   margin-bottom: 50px;
 }
@@ -90,9 +98,30 @@ p {
   margin-bottom: 175px;
 }
 
+.mob-menu {
+  background: #f5f5f5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 80%;
+  margin-left: 20%;
+}
+
+.mob-menu-c {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(196, 196, 196, 0.7);
+}
+
 .mlr10 {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.mr-20 {
+  margin-right: -20px;
 }
 
 .mr25 {
@@ -121,6 +150,10 @@ p {
 
 .mw600 {
   max-width: 600px;
+}
+
+.mw650 {
+  max-width: 650px;
 }
 
 .mw900 {
@@ -178,12 +211,12 @@ p {
   width: 15%;
 }
 
-.w29 {
-  width: 29%;
+.w20 {
+  width: 20%;
 }
 
-.w40 {
-  width: 40px;
+.w29 {
+  width: 29%;
 }
 
 .w45 {
@@ -206,8 +239,13 @@ p {
   width: 163px;
 }
 
-.w200 {
-  width: 200px;
+.w265 {
+  width: 265px;
+}
+
+.wg40 {
+  width: 40px;
+  height: 40px;
 }
 
 .z1 {
@@ -216,4 +254,51 @@ p {
 
 .z2 {
   z-index: 2;
+}
+
+@media screen and (max-width: 959px) {
+  .h200-mob {
+    height: 200px;
+  }
+
+  .hide-mob {
+    display: none !important;
+  }
+
+  .ml20-mob {
+    margin-left: 20%;
+  }
+
+  .mr20-mob {
+    margin-right: 20%;
+  }
+
+  .pal20-mob {
+    position: absolute;
+    left: 20px;
+  }
+
+  .plr20-mob {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .w80-mob {
+    width: 80%;
+  }
+
+  .w200-mob {
+    width: 200px;
+  }
+
+  .wh20-mob {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .hide-desk {
+    display: none !important;
+  }
 }

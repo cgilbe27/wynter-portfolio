@@ -1,14 +1,62 @@
 <div
+  *ngIf="menuIsEnabled"
+  fxLayout="column"
+  class="mob-menu-c"
+  (click)="toggleMenu()"
+>
+  <div fxLayout="column" class="mob-menu">
+    <div class="p20" fxLayout="row" fxLayout="row" fxLayoutAlign="end center">
+      <img
+        class="cp wh20-mob"
+        (click)="toggleMenu()"
+        src="/assets/images/icons/hamburger-menu.svg"
+      />
+    </div>
+    <a
+      class="aero-bt p20 q"
+      [class.fuschia-c]="url === '/' || url.includes('/projects')"
+      (click)="gotoUrl('/')"
+      >Projects</a
+    >
+    <a
+      class="aero-bt p20 q"
+      [class.fuschia-c]="url === '/about'"
+      (click)="gotoUrl('/about')"
+      >About Me</a
+    >
+    <a
+      class="aero-bt p20 q"
+      [class.fuschia-c]="url === '/resume'"
+      target="_blank"
+      href="/assets/files/Resume.pdf"
+      >Resume</a
+    >
+    <a
+      class="aero-bt p20 q"
+      [class.fuschia-c]="url === '/contact'"
+      (click)="gotoUrl('/contact')"
+      >Contact</a
+    >
+  </div>
+</div>
+<div
   class="w100 p20 fixed cultured-bc z2"
   fxLayout="row"
   fxLayoutAlign="space-between center"
 >
   <img
-    class="cp w40"
+    class="cp wh40 wh20-mob"
     (click)="gotoUrl('/')"
     src="/assets/images/logos/Vector.svg"
   />
-  <div fxLayout="row" fxLayoutAlign="end center">
+  <div class="hide-desk" fxLayout="row" fxLayoutAlign="end center">
+    <img
+      class="cp"
+      (click)="toggleMenu()"
+      src="/assets/images/icons/hamburger-menu.svg"
+    />
+  </div>
+  <div class="hide-mob" fxLayout="row" fxLayoutAlign="end center">
     <a
       class="mlr10 underline"
       (click)="gotoUrl('/')"

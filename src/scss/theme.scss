@@ -261,6 +261,10 @@ h1 {
   font-size: 40px;
   line-height: 45px;
   letter-spacing: 0.03em;
+  @media screen and (max-width: 959px) {
+    font-size: 24px;
+    line-height: 27px;
+  }
 }
 
 h2 {
@@ -271,9 +275,15 @@ h2 {
   font-size: 32px;
   line-height: 30px;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 959px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
-h3 {
+h3,
+.h3 {
   color: mat-color($sr-black-ink);
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -281,6 +291,24 @@ h3 {
   font-size: 28px;
   line-height: 30px;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 959px) {
+    font-size: 22px;
+  }
+}
+
+h5 {
+  color: mat-color($sr-black-ink);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+
+  @media screen and (max-width: 959px) {
+    font-size: 16px;
+  }
 }
 
 p,
@@ -292,9 +320,14 @@ p,
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 959px) {
+    font-size: 16px;
+  }
 }
 
 q,
+.q,
 .pc {
   color: mat-color($sr-black-ink);
   font-family: 'Comfortaa', sans-serif;
@@ -308,15 +341,25 @@ q,
   ::after {
     content: '';
   }
+
+  @media screen and (max-width: 959px) {
+    font-size: 16px;
+    line-height: 25px;
+  }
 }
 
 span {
   color: mat-color($sr-black-ink);
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 16px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  @media screen and (max-width: 959px) {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 a {
@@ -344,6 +387,24 @@ a[href] {
 input {
   border: 1px solid mat-color($sr-black-ink);
   height: 36px;
+  padding-left: 10px;
+  color: mat-color($sr-black-ink);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+}
+
+textarea {
+  color: mat-color($sr-black-ink);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
 }
 
 .active {
@@ -381,6 +442,10 @@ input {
   background-color: mat-color($sr-aero);
 }
 
+.aero-bt {
+  border-top: 1px solid mat-color($sr-aero);
+}
+
 .normal {
   font-weight: normal;
 }
@@ -395,7 +460,6 @@ input {
 
 .fuschia-c {
   color: mat-color($sr-fuschia);
-  font-weight: bold;
 }
 
 .key-lime-bc {
@@ -418,6 +482,21 @@ input {
   text-decoration: none;
   display: inline-block;
   margin-left: 8px;
+}
+
+.badge {
+  padding: 15px 20px;
+  color: mat-color($sr-black-ink);
+  font-family: 'Comfortaa', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid #000000;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 25px;
+  border-radius: 20px;
 }
 
 .input2 {
