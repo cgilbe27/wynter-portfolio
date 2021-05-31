@@ -37,6 +37,14 @@ const appRoutes: Routes = [
       ),
     pathMatch: 'full',
   },
+  {
+    path: 'projects/collectibles',
+    loadChildren: () =>
+      import('./components/projects/collectibles/collectibles.module').then(
+        (m) => m.CollectiblesModule
+      ),
+    pathMatch: 'full',
+  },
 
   // Otherwise redirect back to Home
   { path: '**', redirectTo: '' },

@@ -74,8 +74,16 @@ p {
   border: 3px solid #5574f9;
 }
 
+.collectibles-blue-b3 {
+  border: 3px solid #116fb4;
+}
+
 .m0a {
   margin: 0 auto;
+}
+
+.mbot-50 {
+  margin-bottom: -50px;
 }
 
 .mbot10 {
@@ -134,6 +142,10 @@ p {
 
 .mr150 {
   margin-right: 150px;
+}
+
+.mtop-50 {
+  margin-top: -50px;
 }
 
 .mtop8 {
@@ -203,6 +215,10 @@ p {
   text-align: center;
 }
 
+.tsx-1 {
+  transform: scaleX(-1);
+}
+
 .vam {
   vertical-align: middle;
 }
@@ -265,12 +281,28 @@ p {
     display: none !important;
   }
 
+  .mbot50-mob {
+    margin-bottom: 50px;
+  }
+
   .ml20-mob {
     margin-left: 20%;
   }
 
+  .mr0-mob {
+    margin-right: 0;
+  }
+
   .mr20-mob {
     margin-right: 20%;
+  }
+
+  .mtop100-mob {
+    margin-top: 100px;
+  }
+
+  .p10-mob {
+    padding: 10px;
   }
 
   .pal20-mob {
@@ -283,8 +315,24 @@ p {
     padding-right: 20px;
   }
 
+  .tal-mob {
+    text-align: left;
+  }
+
+  .w35-mob {
+    width: 35%;
+  }
+
+  .w50-mob {
+    width: 50%;
+  }
+
   .w80-mob {
     width: 80%;
+  }
+
+  .w100-mob {
+    width: 100%;
   }
 
   .w200-mob {
