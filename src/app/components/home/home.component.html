@@ -28,9 +28,37 @@
     <h2>Recent Works</h2>
   </div>
 
-  <div class="cotton-candy-bc w100 h398 mbot50 w80-mob ml20-mob h200-mob"></div>
+  <!-- <div class="cotton-candy-bc w100 h398 mbot50 w80-mob ml20-mob h200-mob"></div> -->
 
-  <div class="key-lime-bc w100 h398 mbot50 w80-mob mr20-mob h200-mob"></div>
+  <div
+    class="key-lime-bc w100 h398 mbot50 plr150 w80-mob ml20-mob h200-mob"
+    fxLayout="row"
+  >
+    <div
+      class="mlr10 mr50 hide-mob"
+      fxLayout="column"
+      fxLayoutAlign="center center"
+    >
+      <h3 class="tac">Collectibles & Games</h3>
+      <p class="tac mbot10">Designing a Responsive Ecommerce Site</p>
+      <div class="input2 cp" (click)="gotoUrl('/projects/collectibles')">
+        <label class="cp">View Case Study</label>
+      </div>
+    </div>
+    <div class="w100" fxLayout="row" fxLayoutAlign="center center">
+      <img
+        class="w50 w200-mob pal20-mob"
+        src="/assets/images/collectibles/CG-desktop-mockup.png"
+      />
+    </div>
+  </div>
+  <div class="hide-desk ml20-mob mbot50-mob">
+    <h3>Collectibles & games</h3>
+    <p class="tac mbot10 tal-mob">Designing a Responsive Ecommerce Site</p>
+    <div class="input2 cp" (click)="gotoUrl('/projects/collectibles')">
+      <label class="cp">View Case Study</label>
+    </div>
+  </div>
 
   <div
     class="aero-bc w100 h398 mbot50 plr150 w80-mob ml20-mob h200-mob"
@@ -38,7 +66,7 @@
   >
     <div class="w100" fxLayout="row" fxLayoutAlign="center center">
       <img
-        class="w100 mr50 w200-mob pal20-mob"
+        class="w50 mr50 w200-mob pal20-mob"
         src="/assets/images/kaus/UpdatedKausDesktop.png"
       />
     </div>
