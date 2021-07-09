@@ -45,6 +45,14 @@ const appRoutes: Routes = [
       ),
     pathMatch: 'full',
   },
+  {
+    path: 'projects/design-lab',
+    loadChildren: () =>
+      import('./components/projects/designlab/designlab.module').then(
+        (m) => m.DesignLabModule
+      ),
+    pathMatch: 'full',
+  },
 
   // Otherwise redirect back to Home
   { path: '**', redirectTo: '' },
