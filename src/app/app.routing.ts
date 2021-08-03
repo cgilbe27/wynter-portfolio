@@ -53,6 +53,14 @@ const appRoutes: Routes = [
       ),
     pathMatch: 'full',
   },
+  {
+    path: 'projects/watch-list',
+    loadChildren: () =>
+      import('./components/projects/watchlist/watchlist.module').then(
+        (m) => m.WatchlistModule
+      ),
+    pathMatch: 'full',
+  },
 
   // Otherwise redirect back to Home
   { path: '**', redirectTo: '' },
