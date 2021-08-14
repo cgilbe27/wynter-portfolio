@@ -48,6 +48,16 @@ p {
   cursor: pointer;
 }
 
+.box-hover {
+  width: 398px;
+  height: 522px;
+  &:hover {
+    & img {
+      display: none;
+    }
+  }
+}
+
 .cp {
   cursor: pointer;
 }
@@ -192,6 +202,10 @@ p {
   padding: 50px;
 }
 
+.p100 {
+  padding: 100px;
+}
+
 .ptb50 {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -273,6 +287,10 @@ p {
 }
 
 @media screen and (max-width: 959px) {
+  .box-hover {
+    height: 100%;
+  }
+
   .h200-mob {
     height: 200px;
   }
@@ -352,5 +370,15 @@ p {
 @media screen and (min-width: 960px) {
   .hide-desk {
     display: none !important;
+  }
+
+  .box-hover {
+    &:not(:hover) {
+      & h3,
+      p,
+      div {
+        display: none;
+      }
+    }
   }
 }
