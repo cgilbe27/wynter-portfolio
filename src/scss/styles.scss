@@ -58,6 +58,26 @@ p {
   }
 }
 
+.companal-box-hover {
+  & .cb-step1 {
+    display: flex !important;
+  }
+
+  & .cb-step2 {
+    display: none !important;
+  }
+
+  &:hover {
+    & .cb-step1 {
+      display: none !important;
+    }
+
+    & .cb-step2 {
+      display: flex !important;
+    }
+  }
+}
+
 .cp {
   cursor: pointer;
 }
@@ -108,8 +128,8 @@ p {
   margin-bottom: 50px;
 }
 
-.mbot125 {
-  margin-bottom: 125px;
+.mbot100 {
+  margin-bottom: 100px;
 }
 
 .mbot175 {
@@ -160,6 +180,10 @@ p {
 
 .mtop8 {
   margin-top: 8px;
+}
+
+.mtop100 {
+  margin-top: 100px;
 }
 
 .mtop160 {
@@ -285,6 +309,10 @@ p {
 @media screen and (max-width: 959px) {
   .box-hover {
     height: 100%;
+  }
+
+  .companal-box-hover .cb-step2 {
+    display: flex !important;
   }
 
   .h200-mob {
