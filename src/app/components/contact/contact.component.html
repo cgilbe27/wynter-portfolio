@@ -8,9 +8,21 @@
       >
     </div>
     <h5>Name</h5>
-    <input class="mbot25 w265" type="text" id="name" name="name" />
-    <h5>Email</h5>
-    <input class="mbot25 w265" type="text" id="email" name="email" />
+    <input
+      class="mbot25 w265"
+      type="text"
+      id="name"
+      name="name"
+      (keyup)="onChangeName($event)"
+    />
+    <h5>Subject</h5>
+    <input
+      class="mbot25 w265"
+      type="text"
+      id="email"
+      name="email"
+      (keyup)="onChangeSubject($event)"
+    />
     <h5>How can I help?</h5>
     <textarea
       id="response"
@@ -19,12 +31,13 @@
       rows="5"
       cols="50"
       placeholder="A cheeky placeholder text"
+      (keyup)="onChangeBody($event)"
     >
     </textarea>
     <div class="mr-20" fxLayout="row" fxLayoutAlign="end center">
       <div class="trigger cp pr z1 w163 mbot50">
         <div class="input cp">
-          <label class="cp">Contact Me!</label>
+          <a class="cp styled-a" [attr.href]="getAttr()">Contact Me!</a>
         </div>
         <div class="overlay cp"></div>
       </div>
