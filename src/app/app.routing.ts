@@ -61,6 +61,14 @@ const appRoutes: Routes = [
       ),
     pathMatch: 'full',
   },
+  {
+    path: 'projects/ontrak',
+    loadChildren: () =>
+      import('./components/projects/ontrak/ontrak.module').then(
+        (m) => m.OntrakModule
+      ),
+    pathMatch: 'full',
+  },
 
   // Otherwise redirect back to Home
   { path: '**', redirectTo: '' },

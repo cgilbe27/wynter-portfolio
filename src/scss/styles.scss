@@ -313,6 +313,11 @@ p {
 @media screen and (max-width: 959px) {
   .box-hover {
     height: 100%;
+    &:hover {
+      & img {
+        display: flex;
+      }
+    }
   }
 
   .companal-box-hover .cb-step2 {
